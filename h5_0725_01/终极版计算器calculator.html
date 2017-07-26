@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#calc {
+				width: 400px;
+				height: 800px;
+				background: #F2F2F2;
+				margin-left: 40%;
+				border: 1px solid #1883D7;
+			}
+			
+			#shuru {
+				height: 100px;
+				width: 380px;
+			
+				text-align: right;
+				line-height: 100px;
+				padding-right: 20px;
+			}
+			
+			#shuchu {
+				height: 100px;
+				width: 380px;
+				background: #E6E6E6 ;
+				text-align: right;
+				line-height: 100px;
+				padding-right: 20px;
+				font-size: 35px;
+			}
+			
+			.fuhao {
+				height: 100px;
+				width: 100px;
+				display: inline-block;
+				background: gray;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			
+			body {
+				margin: 0;
+			}
+			
+			.fh1 {
+				height: 100px;
+				width: 400px;
+				background: #E6E6E6;
+			}
+		   
+		   input{
+		   	   text-decoration: none;
+		   	   width: 100px;
+		   	   height: 100px;
+		   	   display: inline-block;
+		   	   background-color: gray; 
+		   	   font-size: 25px;
+		   	   line-height: 100px;  
+		   	   text-align: center;
+		   }
+		   .number{
+		   	      background-color:#8E959B ; 
+		   }
+		   .number_calc{
+			      background-color:#B49393;
+		   }
+		   #result{
+		   	      background-color:#EACECE;
+		   }
+		   .number:hover{
+		   	     background-color:#8E9500;
+		   }
+		   .number_calc:hover{
+			      background-color:#B49300;
+		   }
+		   input:hover{
+		   	 background-color:#B49300;
+		   }
+		    #result:hover{
+		   	      background-color:#EACEFF;
+		   }
+		</style>
+	</head>
+	<body>
+		<center style="font-size: 30px;">Calculator</center>
+		<div id="calc">
+			<div id="shuru">0123456789</div>
+			<div id="shuchu">0</div>
+			<div class="fh1">
+				<input type="button" id="num_mod" value="%"/><input type="button" id="num_sqr" value="√"/><input type="button" id="num_double"value="X²"/><input type="button" id="num_rec" value="1/X"/>	
+			</div>
+			<div class="fh1">
+				<input type="button" id="num_CE" value="CE"><input type="button" id="result_clear" value="C"/><input type="button" id="num_del" value="X"/><input type="button" id="num_div"class="number_calc" value="÷"/>	
+			</div>
+			<div class="fh1">
+				<input type="button" id="num_7" class="number" value="7"/><input type="button" id="num_8" class="number" value="8"/><input type="button" id="num_9" class="number" value="9"/><input type="button" id="num_multi"class="number_calc"value="*"/>	
+			</div>
+			<div class="fh1">
+				<input type="button"id="num_4" class="number" value="4"/><input type="button" id="num_5" class="number" value="5"/><input type="button" id="num_6" class="number" value="6"/><input type="button" id="num_sub" class="number_calc" value="-"/>	
+			</div>
+			<div class="fh1">
+				<input type="button"id="num_1" class="number" value="1"/><input type="button" id="num_2" class="number" value="2"/><input type="button" id="num_3" class="number" value="3"/><input type="button" id="num_plus" class="number_calc"value="+"/>	
+			</div>
+			<div class="fh1">
+				<input id="num_sub_plus" type="button" value="±"/><input id="num_0" type="button" class="number" value="0"/><input type="button" id="num_dot" value="."/><input type="button"id="result"value="="/>	
+			</div>
+		</div>
+	</body>
+
+</html>

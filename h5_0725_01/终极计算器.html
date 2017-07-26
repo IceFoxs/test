@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#calc {
+				width: 400px;
+				height: 800px;
+				background: #F2F2F2;
+				margin-left: 40%;
+				border: 1px solid #1883D7;
+			}
+			
+			#shuru {
+				height: 100px;
+				width: 380px;
+			
+				text-align: right;
+				line-height: 100px;
+				padding-right: 20px;
+			}
+			
+			#shuchu {
+				height: 100px;
+				width: 380px;
+				background: #E6E6E6 ;
+				text-align: right;
+				line-height: 100px;
+				padding-right: 20px;
+				font-size: 35px;
+			}
+			
+			.fuhao {
+				height: 100px;
+				width: 100px;
+				display: inline-block;
+				background: gray;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			
+			body {
+				margin: 0;
+			}
+			
+			.fh1 {
+				height: 100px;
+				width: 400px;
+				background: #E6E6E6;
+			}
+		   a{
+		   	   text-decoration: none;
+		   	   width: 100px;
+		   	   height: 100px;
+		   	   display: inline-block;
+		   	   background-color: gray; 
+		   	   font-size: 25px;
+		   	   line-height: 100px;  
+		   	   text-align: center;
+		   }
+		   .number{
+		   	      background-color:#8E959B ; 
+		   }
+		   .number_calc{
+			      background-color:#B49393;
+		   }
+		   #result{
+		   	      background-color:#EACECE;
+		   }
+		   .number:hover{
+		   	     background-color:#8E9500;
+		   }
+		   .number_calc:hover{
+			      background-color:#B49300;
+		   }
+		   a:hover{
+		   	 background-color:#B49300;
+		   }
+		    #result:hover{
+		   	      background-color:#EACEFF;
+		   }
+		</style>
+	</head>
+	<body>
+		<center style="font-size: 30px;">Calculator</center>
+		<div id="calc">
+			<div id="shuru">0123456789</div>
+			<div id="shuchu">0</div>
+			<div class="fh1">
+				<a id="num_mod">%</a><a id="num_sqr" >√</a><a id="num_double ">X²</a><a id="num_rec">1/X</a>	
+			</div>
+			<div class="fh1">
+				<a >CE</a><a id="result_clear">C</a><a id="num_del">X</a><a id="num_div"class="number_calc" >÷</a>	
+			</div>
+			<div class="fh1">
+				<a id="num_7" class="number">7</a><a id="num_8" class="number">8</a><a id="num_9" class="number">9</a><a id="num_multi"class="number_calc">*</a>	
+			</div>
+			<div class="fh1">
+				<a id="num_4" class="number">4</a><a id="num_5" class="number">5</a><a id="num_6" class="number">6</a><a id="num_sub" class="number_calc">-</a>	
+			</div>
+			<div class="fh1">
+				<a id="num_1" class="number">1</a><a id="num_2" class="number">2</a><a id="num_3" class="number">3</a><a id="num_plus" class="number_calc">+</a>	
+			</div>
+			<div class="fh1">
+				<a id="num_sub_plus" >±</a><a id="num_0" class="number" >0</a><a id="num_dot">.</a><a id="result">=</a>	
+			</div>
+		</div>
+	</body>
+
+</html>
