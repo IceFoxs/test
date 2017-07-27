@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		    
+			* {
+				margin: 0px;
+				padding: 0px;
+				border: 0;
+			}
+			
+			#topbar {
+				height: 40px;
+				width: 100%;
+				background-color: #333333;
+				max-height: 40px;
+				min-width: 1500px;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+			
+			#topbar_1{
+				height: 40px;
+				weight: 500px;
+				line-height: 40px;
+				display: inline-block;
+				position: absolute;
+				left:15%;
+			}
+			#topbar_2{
+				height: 40px;
+				line-height: 40px;
+				display: inline-block;
+				position: absolute;
+				right:15%;
+			}
+			.link {
+				line-height: 40px;
+				text-decoration: none;
+				color: #C3CDCF;
+				font-size: 10px;
+				margin-right: 10px;
+				
+			}
+			
+			span {
+				color: #444343;
+			}
+			.link:hover{
+				color: white;
+				
+			}
+			#buy{
+				height: 36px;
+				background-color: #808080;
+				display: inline-block;
+				padding-left: 4px;
+				border: 2px solid #808080;
+			}
+			#buy:hover{
+				background-color: whitesmoke;
+				color:#FF6700;
+				border: 2px solid  whitesmoke;
+			}
+			#menu{
+				height:120px;
+				width:100%;
+				background-color:whitesmoke;
+				min-width: 1500px;
+				position: relative;
+				top:0px;
+				left:0px;
+				border-bottom: 1px solid gray;
+			}
+			
+			#menu_1{
+				margin: 30px 0  30px 0;
+				height: 60px;
+				width: 60px;
+				background: url(img/xiaomi.png);
+				background-size:contain;
+				display:inline-block; 
+				background-repeat: no-repeat;
+				position:relative ;
+				left: 15%;		
+			}
+			.menu_list{
+				text-decoration: none;
+				height: 120px;
+				display: inline-block;
+				line-height: 120px;
+				text-align: center;
+				margin-right:14px;
+				font-size: 15px;
+				color:#333333;
+			}
+			#menu_2{
+				height:120px;
+				display: inline-block;
+				position: absolute;
+				line-height: 120px;
+				text-align: center;
+				right:15%;	
+			}
+			#menu_input{
+				height:45px;
+				width: 250px;
+				display:inline-block;
+				text-decoration: none ;
+				border: 1px solid gainsboro;
+				margin-left: 50px;
+			}
+			#menu_button{
+				text-align: center;
+				background: url(img/shousuo_gray.svg);
+				background-size:50% 50%;
+				background-position: center;
+				background-repeat: no-repeat;
+				height:47px;
+				width: 47px;
+				display:inline-block;
+				text-decoration: none ;
+				border: 1px solid gainsboro;
+				border-left: none;
+				background-color: white;
+				position: relative;
+				top:18px;
+			}
+			#menu_button:hover{
+				text-align: center;
+				background-image: url(img/shousuo.svg) ;
+				background-size:50% 50%;
+				background-position: center;
+				background-repeat: no-repeat;
+				height:47px;
+				width: 47px;
+				display:inline-block;
+				text-decoration: none ;
+				border: 1px solid #FF6700;
+				border-left: none;
+				background-color:#FF6700;
+				position: relative;
+				top:18px;
+			}
+			.menu_list:hover{
+				color:#FF6700;
+			}
+			#back{
+				width:100%;
+				height:500px;
+			}
+			#bj_img{
+				height: 500px;
+				background: url(img/xiaomishouji.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				display: inline-block;
+				position: absolute;
+				left: 15%;
+				right: 15%;
+			}
+			#img_selcet{
+				padding: 25px 0 25px 0;
+				list-style: none;
+				height:450px;
+				width:230px;
+				background-color: black;
+				opacity: .5;
+			}
+			#img_selcet li {
+				line-height: 45px;
+				height:45px;
+				width: 230px;
+				color: white;
+				text-indent: 30px;
+				display: inline-block;
+			}
+			#img_selcet li a{
+				text-decoration: none;
+				color: whitesmoke;
+			}
+			pre{
+				list-style: none;
+				font-size: 15px;
+			}
+			#img_selcet li :hover{
+				background-color:#FF6700 ;
+			}
+			.circle{
+				border: 1px solid dimgray;
+				height:11px;
+				width:11px;
+				display: inline-block;
+				background-color: white;
+				border-radius: 50%;
+				
+			}
+			#circle1{
+				position: absolute;
+				bottom: 5%;
+				right: 5%;
+			}
+			#circle2{
+				position: absolute;
+				bottom: 5%;
+				right: 8%;
+			}
+			#circle3{
+				position: absolute;
+				bottom: 5%;
+				right: 11%;
+			}
+			#circle4{
+				position: absolute;
+				bottom: 5%;
+				right: 14%;
+			}
+			#circle5{
+				position: absolute;
+				bottom: 5%;
+				right: 17%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="topbar">
+			<div id="topbar_1">
+				<a href="#" class="link">小米商城</a><span>|</span>
+				<a href="#" class="link">MIUI</a><span>|</span>
+				<a href="#" class="link">米聊</a><span>|</span>
+				<a href="#" class="link">游戏</a><span>|</span>
+				<a href="#" class="link">多看阅读</a><span>|</span>
+				<a href="#" class="link">云服务</a><span>|</span>
+				<a href="#" class="link">金融</a><span>|</span>
+				<a href="#" class="link">小米商城移动版</a><span>|</span>
+				<a href="#" class="link">问题反馈</a><span>|</span>
+				<a href="#" class="link">Select Region</a>
+			</div>
+			<div id="topbar_2" >
+				<a href="#" class="link">登录</a><span>|</span>
+				<a href="#" class="link">注册</a><span>|</span>
+				<a href="#" class="link">消息通知</a>
+				<a href="#" class="link" id="buy">购物车（0）</a>
+			</div>
+		</div>
+		<div id="menu">
+			  <div id="menu_1"></div>
+			  <div id="menu_2">
+			  	  <a href="" class="menu_list">小米手机</a>
+			  	  <a href="" class="menu_list">红米</a>
+			  	  <a href="" class="menu_list">平板·笔记本</a>
+			  	  <a href="" class="menu_list">电视</a>
+			  	  <a href="" class="menu_list">盒子·影音</a>
+			  	  <a href="" class="menu_list">路由器</a>
+			  	  <a href="" class="menu_list">智能硬件</a>
+			  	  <a href="" class="menu_list">服务</a>
+			  	  <a href="" class="menu_list">社区</a>
+			  	  <input id="menu_input" type="text"/><input id="menu_button" type="button"/>
+			  </div>
+		</div>
+		<div id="back">
+			<div id="bj_img">
+				<ul id="img_selcet">
+					<li><a href="#"><pre>手机   电话卡          &gt;</pre></a></li>
+					<li><a href="#"><pre>笔记本平板             &gt;</pre></a></li>
+					<li><a href="#"><pre>电视   盒子            &gt;</pre></a></li>
+					<li><a href="#"><pre>路由器  智能硬件       &gt;</pre></a></li>
+					<li><a href="#"><pre>移动电源 电池 插线板   &gt;</pre></a></li>
+					<li><a href="#"><pre>耳机 音响              &gt;</pre></a></li>
+					<li><a href="#"><pre>保护套 贴膜            &gt;</pre></a></li>
+					<li><a href="#"><pre>线材支架存储卡         &gt;</pre></a></li>
+					<li><a href="#"><pre>箱包 服饰 鞋 眼镜      &gt;</pre></a></li>
+					<li><a href="#"><pre>米兔 生活周边          &gt;</pre></a></li>
+				</ul>
+				<input id="circle1" class="circle" type="button" />
+				<input id="circle2"  class="circle" type="button" />
+				<input id="circle3" class="circle" type="button" />
+				<input id="circle4" class="circle" type="button" />
+				<input id="circle5" class="circle" type="button" />
+			</div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br /><br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
+
+</html>
